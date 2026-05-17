@@ -4,6 +4,20 @@
   "parameters": {},
   "functions": [],
   "variables": {},
-  "resources": [],
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2025-01-01",
+      "name": "aka12345storage",
+      "tags": {
+        "displayName": "aka12345storage"
+      },
+      "location": "[resourceGroup().location]",
+      "kind": "StorageV2",
+      "sku": {
+        "name": "Standard_LRS"
+      }
+    }
+  ],
   "outputs": {}
 }
